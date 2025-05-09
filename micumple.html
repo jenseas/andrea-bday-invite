@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación de Cumpleaños</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="micumple.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1 class="titulo-bonito">🌸 Andrea’s Bday ✨</h1> <!-- TÍTULO AGREGADO AQUÍ -->
+    <img src="imagenes/mi-cumple.jpg" alt="Invitación de Cumpleaños" class="header-img">
+
+    <div class="botones">
+      <a href="https://calendar.app.google/zALJ9s8pam56r6hK6" target="_blank" class="btn lavanda">Fecha</a>
+
+      <a href="https://www.google.com/maps/place/TERRAZA+AbiLu/@20.6850524,-103.2339537,17z/data=!3m1!4b1!4m6!3m5!1s0x8428b77f59591089:0x84861c9d5c738b7c!8m2!3d20.6850524!4d-103.2339537!16s%2Fg%2F11gs4bybl5?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn rosita">Ubicación</a>
+
+      <button class="btn lavanda" onclick="mostrarInfo()">Información</button>
+    </div>
+
+    <div id="infoTarjeta" class="info-tarjeta oculto">
+      <h3>🎉 Detalles de la Fiesta</h3>
+      <p><strong>Fecha:</strong> 17 de mayo de 2025, 2:00 PM</p>
+      <p><strong>Ubicación:</strong> Terraza abilu</p>
+      <p><strong>Tema:</strong> Mi bday 🍰</p>
+      <p><strong>Dress Code:</strong> Swimmsuit 🌸</p>
+      <button class="cerrar" onclick="ocultarInfo()">Cerrar</button>
+    </div>
+  </div>
+
+  <script>
+    function mostrarInfo() {
+      document.getElementById("infoTarjeta").classList.remove("oculto");
+    }
+
+    function ocultarInfo() {
+      document.getElementById("infoTarjeta").classList.add("oculto");
+    }
+  </script>
+</body>
+</html>
